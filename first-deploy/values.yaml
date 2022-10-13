@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: ajiqbrainx/pipeline
+  repository: ajiqbrainx/helm
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "67"
+  tag: ["${System.env.BUILD_NUMBER}"]
 
 imagePullSecrets: []
 nameOverride: ""
