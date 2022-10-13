@@ -8,7 +8,7 @@ image:
   repository: ajiqbrainx/helm
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ["${System.env.BUILD_NUMBER}"]
+  tag: "3"
 
 imagePullSecrets: []
 nameOverride: ""
